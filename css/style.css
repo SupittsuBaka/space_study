@@ -243,10 +243,11 @@ body::-webkit-scrollbar-thumb {
 
 .content {
   display: flex;
+  flex-direction: column;
   background-color: white;
   position: relative;
   z-index: 2;
-  justify-content: center;
+  align-items: center;
 }
 .content::before {
   pointer-events: none;
@@ -267,4 +268,11 @@ body::-webkit-scrollbar-thumb {
 }
 .section__body {
   width: 90%;
+}
+
+.bg-blue {
+  background-color: var(--blue);
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
