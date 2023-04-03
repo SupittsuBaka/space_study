@@ -1,0 +1,41 @@
+.bonus {
+  height: 845px;
+}
+
+.bonus__body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bonus__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  height: 650px;
+  margin-top: 50px;
+}
+
+.bonus__header__title {
+  font-size: 40px;
+}
+
+.bonus-header__subtitle {
+  font-size: 34px;
+  font-weight: 700;
+  color: var(--orange);
+}
+.consult {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: none;
+  cursor: pointer;
+}
+.consult:hover {
+  opacity: 0.7;
+}
+.consult__text {
+  color: var(--orange);
+  font-weight: 700;
+}

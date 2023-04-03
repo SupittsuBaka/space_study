@@ -1,0 +1,51 @@
+/* FAQ SECTION */
+
+/* FAQ */
+
+.faq-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.accordion {
+  max-width: 456px;
+}
+.accordion__item-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.accordion__item {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+}
+.accordion__item-content {
+  display: none;
+  margin-top: 15px;
+  opacity: 0.6;
+}
+.accordion__item-content-block {
+  display: block;
+}
+.accordion__item-title {
+  font-size: 16px;
+}
+.accordion__item-button {
+  flex: 0 0 15px;
+  height: 15px;
+  border: none;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.accordion__item-minus {
+  background-image: url("../img/faq-section/minus.svg");
+}
+.accordion__item-plus {
+  background-image: url("../img/faq-section/plus.svg");
+}
+.accordion .hr-line {
+  opacity: 0.15;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}

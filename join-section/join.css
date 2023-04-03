@@ -1,0 +1,117 @@
+.join-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  flex-shrink: 1;
+}
+.join-body > * {
+  flex: 1 1 33.3%;
+}
+
+.join-astro {
+  width: 40%;
+  aspect-ratio: 518/577;
+  align-self: flex-end;
+}
+.join__info-area,
+.join__advantages {
+  height: 100%;
+  padding: 10% 0 5%;
+}
+.join__info-area {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.join__title {
+  font-weight: 700;
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+.join__title._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
+.join__subtitle {
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+.join__subtitle._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+  transition: all 0.8s ease 0.4s;
+}
+.join__advantages {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.statistic {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.statistic__item {
+  display: flex;
+  flex-direction: column;
+  line-height: 25px;
+  gap: 10px;
+}
+
+.statistic__item strong {
+  font-size: 32px;
+  color: var(--orange);
+}
+.privilege {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.privilege__text {
+  color: var(--orange);
+  font-weight: 700;
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+.privilege__text._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+  transition: all 0.8s ease 0.4s;
+}
+.corner-1 {
+  display: flex;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 65px;
+  height: 65px;
+  border-style: solid;
+  border-width: 3px;
+  border-bottom: none;
+  border-right: none;
+  border-color: var(--orange);
+}
+
+.corner-2 {
+  display: flex;
+  position: relative;
+  bottom: 0;
+  right: 0;
+  width: 65px;
+  height: 65px;
+  border-style: solid;
+  border-width: 3px;
+  border-top: none;
+  border-left: none;
+  border-color: var(--orange);
+  align-self: flex-end;
+}
+.corner-1.white,
+.corner-2.white {
+  border-color: white;
+}
