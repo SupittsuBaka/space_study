@@ -1,0 +1,75 @@
+.footer {
+  height: 425px;
+}
+.footer__body {
+  display: flex;
+  width: 100%;
+  gap: 150px;
+}
+/* Contacts */
+.footer__body__element {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 200px;
+  font-size: 18px;
+}
+
+.footer__body__element__title {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--orange);
+}
+
+.footer__body__element__number {
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+.footer__subtitle__element__social:hover {
+  opacity: 0.7;
+}
+/* Office */
+.footer__body__element__subtitle {
+  display: flex;
+  max-width: 500px;
+  width: 100%;
+  gap: 25px;
+}
+
+.footer__subtitle__element {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__subtitle__element__time {
+  width: 167px;
+}
+/* Links */
+.footer__body__element__links {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 10px;
+  height: 90px;
+}
+
+.footer-link {
+  color: black;
+}
+
+.footer-link:hover {
+  color: var(--orange);
+  opacity: 0.8;
+}
+
+.footer-link__contract {
+  font-size: 24px;
+  color: var(--orange);
+  font-weight: 700;
+}
+
+.footer-link__contract:hover {
+  opacity: 0.7;
+}
