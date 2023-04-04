@@ -1,18 +1,31 @@
 .way {
   height: 1015px;
+  max-height: 100svh;
+}
+@media(max-width: 768px) {
+  
 }
 .way__body {
+  display: flex;
+  position:relative;
+}
+.way__body > * {
+  flex-grow: 1;
+}
+.way-text {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  height: 100%;
-  gap: 15%;
-  padding: 5% 0 10%;
+  width: fit-content;
+  gap:10%;
+  min-width: 648px;
+  padding: 5% 0 10% 10px;
+  position: relative;
+  z-index: 1;
+  background-color: rgba(0,0,255,0.5);
 }
-.way__body > * {
-  flex-shrink: 1;
-}
+
 .way-header {
   display: flex;
   flex-direction: column;
@@ -39,4 +52,103 @@
   max-width: 555px;
   width: 100%;
   flex-grow: 6;
+}
+
+.way-images__mock {
+  width: 50%;
+}
+
+.way-images__astro {
+  max-width: 670px;
+  width: 100vh;
+  display: block;
+  top:50%;
+  right: 0;
+}
+.way-images__keycap {
+  max-width: 160px;
+  width:15vh;
+  top: 10%;
+  right: calc(90vw/100*40);
+}
+.way-images__rock {
+  max-width: 200px;
+  width: 20vh;
+}
+.way-images__rock_first {
+  top: 8%;
+  right: 5vw;
+}
+.way-images__rock_second {
+  top:85%;
+  right: calc(90vw/100*45);
+}
+.way-images__astro,
+.way-images__keycap,
+.way-images__rock{
+  position: absolute;
+  transform: translate(0%, -50%);
+  transform-origin: center;
+  z-index: 0;
+}
+
+@media(max-width: 768px) {
+  /*images*/
+  .way-images__astro {
+    width: 90vw;
+    right: auto;
+    left: auto;
+  }
+  .way-images__keycap {
+    max-width: 160px;
+    width:25vw;
+    top: 10%;
+    left: 10%;
+  }
+  .way-images__rock {
+    width: 35vw;
+  }
+  .way-images__rock_first {
+    top: 8%;
+    right: 5vw;
+  }
+  .way-images__rock_second {
+    top:85%;
+    left: 5%;
+  }
+
+  /*blocks*/
+  .way {
+    max-height:none;
+    min-height: fit-content;
+  }
+  .way-text {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-content: center;
+    text-align: center;
+    flex: 1 1 auto;
+    min-width: 0;
+    gap: 40px;
+  }
+  .way__info-area {
+    max-width: 100%;
+  }
+  .way-images__mock {
+    display: contents;
+  }
+}
+
+@media(min-width: 1440px) {
+  /*images*/
+  .way-images__keycap {
+    right: 40%;
+  }
+  .way-images__rock_first {
+    right: 10%;
+  }
+  .way-images__rock_second {
+    right: 45%;
+  }
 }
