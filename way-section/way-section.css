@@ -2,12 +2,11 @@
   height: 1015px;
   max-height: 100svh;
 }
-@media(max-width: 768px) {
-  
+@media (max-width: 768px) {
 }
 .way__body {
   display: flex;
-  position:relative;
+  position: relative;
 }
 .way__body > * {
   flex-grow: 1;
@@ -18,12 +17,12 @@
   align-items: flex-start;
   justify-content: space-between;
   width: fit-content;
-  gap:10%;
+  gap: 10%;
   min-width: 648px;
-  padding: 5% 0 10% 10px;
+  padding: 5% 5% 10%;
   position: relative;
   z-index: 1;
-  background-color: rgba(0,0,255,0.5);
+  background-color: rgba(0, 0, 255, 0.5);
 }
 
 .way-header {
@@ -62,14 +61,14 @@
   max-width: 670px;
   width: 100vh;
   display: block;
-  top:50%;
+  top: 50%;
   right: 0;
 }
 .way-images__keycap {
   max-width: 160px;
-  width:15vh;
+  width: 15vh;
   top: 10%;
-  right: calc(90vw/100*40);
+  right: calc(90vw / 100 * 40);
 }
 .way-images__rock {
   max-width: 200px;
@@ -80,19 +79,19 @@
   right: 5vw;
 }
 .way-images__rock_second {
-  top:85%;
-  right: calc(90vw/100*45);
+  top: 85%;
+  right: calc(90vw / 100 * 45);
 }
 .way-images__astro,
 .way-images__keycap,
-.way-images__rock{
+.way-images__rock {
   position: absolute;
   transform: translate(0%, -50%);
   transform-origin: center;
   z-index: 0;
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   /*images*/
   .way-images__astro {
     width: 90vw;
@@ -101,7 +100,7 @@
   }
   .way-images__keycap {
     max-width: 160px;
-    width:25vw;
+    width: 25vw;
     top: 10%;
     left: 10%;
   }
@@ -113,13 +112,13 @@
     right: 5vw;
   }
   .way-images__rock_second {
-    top:85%;
+    top: 85%;
     left: 5%;
   }
 
   /*blocks*/
   .way {
-    max-height:none;
+    max-height: none;
     min-height: fit-content;
   }
   .way-text {
@@ -140,15 +139,51 @@
   }
 }
 
-@media(min-width: 1440px) {
+@media (min-width: 1440px) {
   /*images*/
   .way-images__keycap {
     right: 40%;
   }
   .way-images__rock_first {
-    right: 10%;
+    right: 5%;
   }
   .way-images__rock_second {
     right: 45%;
+  }
+}
+
+@media (min-width: 1024px) {
+  /*images*/
+  .way-images__astro {
+    animation: 12s linear infinite 0s astro;
+  }
+  .way-images__keycap {
+    animation: 12s linear infinite 0s astro;
+  }
+  .way-images__rock {
+    animation: 12s linear infinite 0s astro;
+  }
+  .way-images__rock_first {
+    animation: 12s linear infinite 0s astro;
+  }
+  .way-images__rock_second {
+    animation: 12s linear infinite 0s astro;
+  }
+}
+@keyframes astro {
+  0% {
+    transform: translate(0, -50%);
+  }
+  25% {
+    transform: translate(0, -60%);
+  }
+  50% {
+    transform: translate(0, -50%);
+  }
+  75% {
+    transform: translate(0, -40%);
+  }
+  100% {
+    transform: translate(0, -50%);
   }
 }
