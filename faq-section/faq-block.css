@@ -8,7 +8,7 @@
 }
 
 .accordion {
-  max-width: 456px;
+  max-width: 1200px;
 }
 .accordion__item-wrapper {
   display: flex;
@@ -28,7 +28,8 @@
   display: block;
 }
 .accordion__item-title {
-  font-size: 16px;
+  font-size: 32px;
+  font-weight: 700;
 }
 .accordion__item-button {
   flex: 0 0 15px;
