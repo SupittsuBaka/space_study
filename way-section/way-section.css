@@ -2,8 +2,7 @@
   height: 1015px;
   max-height: 100svh;
 }
-@media (max-width: 768px) {
-}
+
 .way__body {
   display: flex;
   position: relative;
@@ -155,35 +154,83 @@
 @media (min-width: 1024px) {
   /*images*/
   .way-images__astro {
-    animation: 12s linear infinite 0s astro;
+    animation: 18s linear infinite 0s astro;
   }
   .way-images__keycap {
-    animation: 12s linear infinite 0s astro;
-  }
-  .way-images__rock {
-    animation: 12s linear infinite 0s astro;
+    animation: 12s linear infinite 0s keycap;
   }
   .way-images__rock_first {
-    animation: 12s linear infinite 0s astro;
+    animation: 30s linear infinite 0s first-rock;
   }
   .way-images__rock_second {
-    animation: 12s linear infinite 0s astro;
+    animation: 20s linear infinite 0s second-rock;
   }
 }
 @keyframes astro {
   0% {
+    transform: translate(0%, -50%) scale(1);
+  }
+  25% {
+    transform: translate(-3%, -60%) scale(0.90);
+  }
+  50% {
+    transform: translate(0%, -50%) scale(1);
+  }
+  75% {
+    transform: translate(3%, -40%) scale(1.10);
+  }
+  100% {
+    transform: translate(0%, -50%) scale(1);
+  }
+}
+@keyframes keycap {
+  0% {
     transform: translate(0, -50%);
   }
   25% {
-    transform: translate(0, -60%);
+    transform: translate(0, -55%);
   }
   50% {
-    transform: translate(0, -50%);
+    transform: translate(0, -60%);
   }
   75% {
-    transform: translate(0, -40%);
+    transform: translate(0, -55%);
   }
   100% {
     transform: translate(0, -50%);
+  }
+}
+@keyframes first-rock {
+  0% {
+    transform: translate(0%, -50%) rotate(0deg);
+  }
+  25% {
+    transform: translate(-20%, -40%) rotate(90deg);
+  }
+  50% {
+    transform: translate(0%, -30%) rotate(180deg);
+  }
+  75% {
+    transform: translate(20%, -40%) rotate(270deg);
+  }
+  100% {
+    transform: translate(0%, -50%) rotate(360deg);
+  }
+}
+@keyframes second-rock {
+  0% {
+    transform: translate(10%, -50%) rotate(0deg);
+  }
+  25% {
+    transform: translate(25%, -55%) rotate(90deg);
+  }
+  50% {
+    transform: translate(40%, -50%) rotate(180deg);
+  }
+  75% {
+    transform: translate(25%, -45%) rotate(270deg);
+  }
+  100% {
+    transform: translate(10%, -50%) rotate(360deg);
   }
 }

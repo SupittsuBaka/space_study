@@ -1,0 +1,253 @@
+.courses {
+  height: 950px;
+}
+
+.courses__body {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	min-height: fit-content;
+  position: relative;
+  height: 100%;
+	gap: 60px;
+}
+
+.courses__text {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	height: 250px;
+}
+
+.courses__info-area {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	gap:30px;
+
+	width: 300px;
+	min-width: 300px;
+	height: 100%;
+}
+
+.courses__title {
+	color: var(--orange);
+}
+.courses__subtitle {
+	color: white;
+	font-size: 20px;
+}
+
+.courses__features {
+	display: flex;
+	justify-content: center;
+	flex-grow: 1;
+}
+.features__list {
+	gap: 30px 60px;
+	max-width: 900px;
+	width: 100%;
+	max-height: 390px;
+	height: 390px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: space-evenly;
+	padding-left: 50px;
+}
+
+.features__item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	width: 180px;
+	height: 80px;
+	background-color: white;
+	font-size: 16px;
+	border: solid 2px var(--orange);
+}
+
+.features__item-holder {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	width: calc(100%/3 +90px);
+	height: 110px;
+}
+.features__icon-holder {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 60px;
+	height: 60px;
+	position:absolute;
+	top: 0;
+	left: 0;
+	transform: translate(-50%, -50%);
+	background-color: white;
+	border-radius: 50%;
+}
+.features__item p {
+	position: relative;
+	z-index: 2;
+	width: 155px;
+	text-align: center;
+}
+
+
+
+
+/* ------------------ */
+
+.course-slider {
+	position: relative;
+	padding: 5%;
+  overflow-x: hidden;
+  background-color: white;
+}
+.course-slider__wrapper {
+}
+.course-slider__slide {
+}
+.course-slider__course {
+	text-align: center;
+}
+
+.course-slide__body {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+	justify-content: space-between;
+	height: 300px;
+}
+
+.course-slide__body>.divider {
+	height: 300px;
+	min-width: 2px;
+	margin: 0px 20px;
+	background-color: var(--orange);
+}
+
+.course-slide__header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	width: 350px;
+	min-width: 350px;
+	height: 50%;
+}
+
+
+.course-slide__title {
+	text-transform: uppercase;
+	color: var(--orange);
+}
+
+.course-slide__info-area {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;	
+	max-width: 460px;
+	height: 80%;
+}
+
+.course-slide__subtitle {
+	text-align: center;
+	font-size: 20px;
+}
+
+/* Стрелки */
+.course-slider .swiper-button-prev::after,
+.course-slider .swiper-button-next::after {
+	color: var(--blue);
+	font-size: 50px;
+}
+
+/* Пагинация */
+.course-slider .swiper-pagination {
+	bottom: 30px;
+}
+/* Буллеты */
+.course-slider .swiper-pagination-bullet {
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	font-size: 14px;
+	background-color: #fff;
+}
+
+/* Скролл */
+.course-slider .swiper-scrollbar-drag {
+	cursor: pointer;
+	background-color: var(--blue);
+  object-fit: contain;
+}
+
+/* Автоширина */
+.course-slider .swiper-slide {
+	width: auto;
+}
+
+@media(max-width:1023px) {
+	.courses {
+		height: fit-content;
+	}
+	.courses__body {
+		height: fit-content;
+		padding: 5% 0;
+		gap: 30px;
+	}
+	.courses__text {
+		flex-direction: column;
+		height: fit-content;
+		gap: 30px;
+	}
+	.courses__info-area {
+		width: 60%;
+		text-align: center;
+	}
+	.features__list {
+		max-height: none;
+		height: fit-content;
+		padding-left: 0;
+		align-self: center;
+		width: 90%;
+	}
+
+	.course-slider {
+		align-self: center;
+		width: 90%;
+	}
+
+	.course-slider__course {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+	}
+	.course-slide__body {
+		flex-direction: column;
+		width: 80%;
+		height:fit-content;
+	}
+	.course-slide__header {
+		min-width: 0;
+		width: 90%;
+		height: auto;
+	}
+	.course-slide__body>.divider {
+		max-height: 2px;
+		height: 2px;
+		width: 90%;
+		margin: 20px 0;
+	}
+	.course-slide__info-area {
+		gap: 60px;
+		width: 90%;
+		height: auto;
+	}
+}
