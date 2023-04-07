@@ -2,8 +2,7 @@
   height: 1015px;
   max-height: 100svh;
 }
-@media (max-width: 768px) {
-}
+
 .way__body {
   display: flex;
   position: relative;

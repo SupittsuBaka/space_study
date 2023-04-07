@@ -36,7 +36,6 @@ h3 {
 }
 html,
 body {
-  height: 100%;
   line-height: 1;
   font-size: 16px;
   font-family: "Space Mono", sans-serif;
@@ -275,4 +274,32 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   width: 100%;
   justify-content: center;
+}
+
+.button {
+  font-size: 24px;
+  color: var(--orange);
+  background-color: #ff7b002a;
+  padding: 10px 30px;
+  transition: all 0.15s;
+}
+
+@media(max-width:1023px){ 
+  .button {
+    background-color: var(--orange);
+    color: #ffd5ae;
+    box-shadow: inset 0px 0px 10px #df6c00;
+  }
+}
+
+.button:hover {
+  background-color: var(--orange);
+  color: #ffd5ae;
+  box-shadow: inset 0px 0px 10px #df6c00;
+}
+
+.button:active {
+  background-color: var(--orange);
+  color: #ffd5ae;
+  box-shadow: inset 0px 0px 20px #ac5300;
 }
