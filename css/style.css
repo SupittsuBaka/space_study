@@ -282,24 +282,25 @@ body::-webkit-scrollbar-thumb {
   background-color: #ff7b002a;
   padding: 10px 30px;
   transition: all 0.15s;
+  cursor: pointer;
 }
 
-@media(max-width:1023px){ 
+@media (max-width: 1023px) {
   .button {
     background-color: var(--orange);
-    color: #ffd5ae;
+    color: white;
     box-shadow: inset 0px 0px 10px #df6c00;
   }
 }
 
 .button:hover {
   background-color: var(--orange);
-  color: #ffd5ae;
+  color: white;
   box-shadow: inset 0px 0px 10px #df6c00;
 }
 
 .button:active {
   background-color: var(--orange);
-  color: #ffd5ae;
+  color: white;
   box-shadow: inset 0px 0px 20px #ac5300;
 }
