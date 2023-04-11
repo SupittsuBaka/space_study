@@ -119,6 +119,7 @@ body::-webkit-scrollbar-thumb {
 .parallax {
   min-height: 100vh;
   background-color: var(--blue);
+  width: 100%;
 }
 .parallax__body {
   position: fixed;
@@ -228,8 +229,7 @@ body::-webkit-scrollbar-thumb {
   height: 100%;
   left: 0;
   background: url("../img/astro-header.png") top / cover no-repeat;
-  aspect-ratio: 2000/2000;
-  width: 50%;
+  aspect-ratio: 1;
   height: auto;
   bottom: 0;
   z-index: 3;

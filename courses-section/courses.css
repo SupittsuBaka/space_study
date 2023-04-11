@@ -194,6 +194,10 @@
 }
 
 @media(max-width:1023px) {
+	.swiper-slide {
+		display: flex;
+		height: auto;
+	}
 	.courses {
 		height: fit-content;
 	}
@@ -231,13 +235,14 @@
 	}
 	.course-slide__body {
 		flex-direction: column;
-		width: 80%;
-		height:fit-content;
+		justify-content: space-between;
+		width: 90%;
+		min-height: fit-content;
+		height: auto;
 	}
 	.course-slide__header {
 		min-width: 0;
 		width: 90%;
-		height: auto;
 	}
 	.course-slide__body>.divider {
 		max-height: 2px;
@@ -248,6 +253,5 @@
 	.course-slide__info-area {
 		gap: 60px;
 		width: 90%;
-		height: auto;
 	}
 }

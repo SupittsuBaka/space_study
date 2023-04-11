@@ -1,0 +1,33 @@
+@media(max-width: 1023px) {
+  .parallax__info-area {
+    max-width: 100%;
+  }
+
+  /*Join*/
+  .join-body {
+    padding: 40px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .join-body > * {
+    align-self: center;
+    width: 90%;
+    padding: 0;
+    flex: 1 1 auto;
+    text-align: center;
+    min-width: 320px;
+  }
+  .join-astro {
+    max-width: 535px;
+    animation: none;
+    filter: drop-shadow(0px 0px 10px black);
+  }
+  .join__advantages {
+    gap: 40px; 
+  }
+  .privilege {
+    max-width: 535px;
+    width: 100%;
+    align-self: center;
+  }
+}
