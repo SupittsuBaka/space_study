@@ -36,6 +36,7 @@ h3 {
 }
 html,
 body {
+  width: 100%;
   line-height: 1;
   font-size: 16px;
   font-family: "Space Mono", sans-serif;
@@ -71,28 +72,24 @@ body::-webkit-scrollbar-thumb {
 }
 .header-body {
   display: flex;
-  max-width: 1440px;
+  max-width: calc(1440px/100*90);
   width: 90%;
   justify-content: space-between;
   align-items: center;
 }
 .logo {
-  display: flex;
   width: 250px;
   aspect-ratio: 290/140;
   position: relative;
   z-index: 3;
   filter: var(--blue-drop-shadow);
+  margin-bottom: -55px;
 }
-@media (min-width: 767px) {
-  .logo {
-    margin-bottom: -100px;
-  }
-}
+
 .header-nav {
   display: flex;
   align-items: center;
-  max-width: 640px;
+  max-width: 600px;
   width: 100%;
   z-index: 3;
 }
@@ -109,6 +106,9 @@ body::-webkit-scrollbar-thumb {
   color: #ff7a00;
   transition: 0.2s linear;
 }
+.side-menu {
+  display: none;
+}
 
 ._info-area {
   max-width: 1000px;
@@ -117,23 +117,30 @@ body::-webkit-scrollbar-thumb {
 
 /* ------------------ */
 .parallax {
-  min-height: 100vh;
+  bottom: 0;
+  min-height: calc(100dvh - 70px);
   background-color: var(--blue);
   width: 100%;
+}
+.parallax * {
+  pointer-events: none;
 }
 .parallax__body {
   position: fixed;
   color: white;
   width: 100%;
-  height: 100%;
+  height: calc(100dvh - 70px);
   top: 0;
   left: 0;
 }
 .parallax__info-area {
   position: relative;
   z-index: 2;
-  max-width: 605px;
   top: 40%;
+}
+.parallax__info-area>* {
+  pointer-events:all;
+  max-width: 605px;
 }
 
 .parallax__title {
@@ -165,7 +172,6 @@ body::-webkit-scrollbar-thumb {
   width: 120%;
   height: 120%;
   top: -10%;
-  left: 40%;
   z-index: 1;
 }
 .images-parallax__item {
@@ -183,6 +189,7 @@ body::-webkit-scrollbar-thumb {
 
 #keycap-1 {
   background: url("../img/keycap01.png") top / cover no-repeat;
+  min-width: 120px;
   aspect-ratio: 170/170;
   width: 8%;
   height: auto;
@@ -191,6 +198,7 @@ body::-webkit-scrollbar-thumb {
 }
 #keycap-2 {
   background: url("../img/keycap02.png") top / cover no-repeat;
+  min-width: 115px;
   aspect-ratio: 160/157;
   width: 8%;
   height: auto;
@@ -199,6 +207,7 @@ body::-webkit-scrollbar-thumb {
 }
 #keycap-3 {
   background: url("../img/keycap03.png") top / cover no-repeat;
+  min-width: 110px;
   aspect-ratio: 147/158;
   width: 8%;
   height: auto;
@@ -207,6 +216,7 @@ body::-webkit-scrollbar-thumb {
 }
 #rock-1 {
   background: url("../img/rock01.png") top / cover no-repeat;
+  min-width: 120px;
   aspect-ratio: 150/135;
   top: 15%;
   left: 15%;
@@ -216,6 +226,7 @@ body::-webkit-scrollbar-thumb {
 }
 #rock-2 {
   background: url("../img/rock02.png") top / cover no-repeat;
+  min-width: 130px;
   aspect-ratio: 155/158;
   top: 80%;
   left: 35%;
@@ -225,20 +236,17 @@ body::-webkit-scrollbar-thumb {
 }
 
 .images-parallax__human {
+  max-width: 60vw;
   width: 50%;
-  height: 100%;
-  left: 0;
+  height: auto;
+  right: 10%;
   background: url("../img/astro-header.png") top / cover no-repeat;
   aspect-ratio: 1;
   height: auto;
-  bottom: 0;
+  bottom: -20px;
   z-index: 3;
 }
-@media (max-aspect-ratio: 3/2) {
-  .images-parallax__human {
-    background-position: 20% top;
-  }
-}
+
 
 .content {
   display: flex;

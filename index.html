@@ -4,10 +4,10 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="./css/style.css">
 	<link rel="stylesheet" href="./join-section/join.css">
 	<link rel="stylesheet" href="./way-section/way-section.css">
-	<link rel="stylesheet" href="css/adaptive.css">
+	<link rel="stylesheet" href="./css/adaptive.css">
 	<!-- font -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,15 +21,14 @@
 		<header class="header">
 
 			<div class="header-body">
-
-				<picture class="logo">
 					<a href="#">
-						<source media="(max-width:767px)" srcset="./img/logo-mini.png 767w">
-						<img src="./img/logo.png" alt="Logo">
+						<img class="logo" src="./img/logo.png" alt="Logo">
 					</a>
-				</picture>
 
-
+					<input class="side-menu" id="side-menu" type="checkbox">
+					<label class="hamb" for="side-menu">
+						<span class="hamb-line"></span>
+					</label>
 				<nav class="header-nav">
 					<ul class="header-nav__list">
 						<a href="">
@@ -54,7 +53,9 @@
 						</a>
 					</ul>
 				</nav>
+				
 			</div>
+			
 		</header>
 
 		<section class="parallax">
@@ -153,6 +154,7 @@
 	</div>
 	<script src="js/script.js"></script>
 	<script src="script2.js"></script>
+	<script src="js/preventScroll.js"></script>
 </body>
 
 </html>

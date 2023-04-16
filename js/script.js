@@ -4,16 +4,16 @@
 window.onload = function () {
   const parallax = document.querySelector(".parallax");
 
-  if (parallax) {
+  if (parallax && window.innerWidth > 1023) {
     const content = document.querySelector(".parallax__info-area");
     const clouds = document.querySelectorAll(".images-parallax__clouds");
     const mountains = document.querySelectorAll(".images-parallax__mountains");
     const human = document.querySelector(".images-parallax__human");
 
     // Коэффициенты
-    const forClouds = 25;
-    const forMountains = 15;
-    const forHuman = 10;
+    const forClouds = 35;
+    const forMountains = 25;
+    const forHuman = 15;
 
     // Скорость анимации
     const speed = 0.05;
@@ -82,9 +82,6 @@ window.onload = function () {
     observer.observe(document.querySelector(".content"));
 
     function setParallaxItemsStyle(scrollTopProcent) {
-      content.style.cssText = `transform: translate(0%,-${
-        scrollTopProcent / 9
-      }%);`;
       for (let i = 0; i < mountains.length; i++) {
         mountains[i].parentElement.style.cssText = `transform: translate(0%,-${
           scrollTopProcent / 6
