@@ -1,6 +1,8 @@
 .footer {
   display: flex;
-
+  position: relative;
+  z-index: 3;
+  background-color: white;
   justify-content: center;
   height: 600px;
 }

@@ -83,7 +83,7 @@ body::-webkit-scrollbar-thumb {
   position: relative;
   z-index: 3;
   filter: var(--blue-drop-shadow);
-  margin-bottom: -55px;
+  margin-bottom: -75px;
 }
 
 .header-nav {
@@ -254,7 +254,7 @@ body::-webkit-scrollbar-thumb {
   flex-direction: column;
   background-color: white;
   position: relative;
-  z-index: 3;
+  z-index: 2;
   align-items: center;
 }
 .content::before {

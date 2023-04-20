@@ -37,7 +37,7 @@
   gap: 10px;
   max-width: 245px;
   height: 160px;
-  transform: translate(0px, 50%);
+  transform: translate(-50%, 0);
   opacity: 0;
   transition: all 0.3s ease 0s;
 }
@@ -54,8 +54,9 @@
   position: relative;
   overflow: hidden;
   margin: 0px 0px 10px 0px;
-  transform: scale(0);
+  transform: translate(-100%, 0);
   transition: all 0.8s ease 0s;
+  opacity: 0;
 }
 .whom-block__element__img {
   position: absolute;
@@ -66,12 +67,9 @@
   object-fit: cover;
 }
 
-.whom-block__element._active .whom-block__element__img__container {
-  transform: scale(1);
-}
-
+.whom-block__element._active .whom-block__element__img__container,
 .whom-block__element._active .whom-block__element__description {
   transform: translate(0px, 0px);
   opacity: 1;
-  transition: all 0.8s ease 0.6s;
+  transition: all 0.8s ease 0.2s;
 }
