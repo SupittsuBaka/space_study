@@ -18,11 +18,13 @@
   display: flex;
   flex: 1 1 auto;
   flex-direction: column;
+  max-width: 1000px;
+  width: 100%;
 }
 .accordion__item-content {
   display: none;
   margin-top: 15px;
-  opacity: 0.6;
+  color: rgba(120, 120, 120, 2);
 }
 .accordion__item-content-block {
   display: block;
