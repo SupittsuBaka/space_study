@@ -32,6 +32,10 @@
   position: relative;
   z-index: 3;
 }
+@media (max-width: 1023px) {
+  .bonus__header {
+  }
+}
 @media (max-width: 767px) {
   .bonus__header {
     width: 100%;
@@ -51,26 +55,6 @@
   font-size: 30px;
   font-weight: 700;
   color: var(--orange);
-}
-.consult {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 300px;
-  height: 50px;
-  cursor: pointer;
-  align-self: center;
-  background-color: #ffe2c8;
-}
-.consult:hover {
-  opacity: 0.7;
-}
-.consult:active {
-  transform: translateY(2px);
-}
-.consult__text {
-  color: var(--orange);
-  font-weight: 700;
 }
 
 .bonus-astro__img {

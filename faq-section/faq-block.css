@@ -33,9 +33,14 @@
   font-size: 32px;
   font-weight: 700;
 }
+@media (max-width: 1024px) {
+  .accordion__item-title {
+    font-size: calc(14px + (16 + 16) * ((100vw - 320px) / 1280));
+  }
+}
 .accordion__item-button {
-  flex: 0 0 15px;
-  height: 15px;
+  flex: 0 0 30px;
+  height: 30px;
   border: none;
   background-color: white;
   background-repeat: no-repeat;
