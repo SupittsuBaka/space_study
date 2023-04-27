@@ -1,32 +1,3 @@
-/* Обнуление */
-*,
-*::before,
-*::after {
-  padding: 0;
-  margin: 0;
-  border: 0;
-  box-sizing: border-box;
-}
-a {
-  text-decoration: none;
-}
-ul,
-ol,
-li {
-  list-style: none;
-}
-img {
-  vertical-align: top;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: inherit;
-}
-
 h2 {
   font-size: calc(20px + (20 + 20) * ((100vw - 320px) / 1440));
   font-weight: 700;
@@ -34,91 +5,13 @@ h2 {
 h3 {
   font-size: 38px;
 }
-html,
-body {
-  width: 100%;
-  line-height: 1;
-  font-size: 16px;
-  font-family: "Space Mono", sans-serif;
-  scroll-behavior: smooth;
-}
-body::-webkit-scrollbar {
-  background-color: #fff;
-  width: 16px;
-}
 
-/* background of the scrollbar except button or resizer */
-body::-webkit-scrollbar-track {
-  background-color: #fff;
-}
-
-/* scrollbar itself */
-body::-webkit-scrollbar-thumb {
-  background-color: #babac0;
-  border-radius: 16px;
-  border: 4px solid #fff;
-}
-
-/* set button(top and bottom of the scrollbar) */
-body::-webkit-scrollbar-button {
-  display: none;
-}
-:root {
-  --blue: #0043f2;
-  --blue-drop-shadow: drop-shadow(4px 4px 0px #0034ba);
-  --orange: #ff7a00;
-}
 .wrapper {
   min-height: 100%;
 }
 /* ------------------ */
 /* ------------------ */
 /* ------------------ */
-.header {
-  display: flex;
-  background-color: var(--blue);
-  height: 70px;
-  justify-content: center;
-}
-.header-body {
-  display: flex;
-  max-width: calc(1440px / 100 * 90);
-  width: 90%;
-  justify-content: space-between;
-  align-items: center;
-}
-.logo {
-  width: 250px;
-  aspect-ratio: 290/140;
-  position: relative;
-  z-index: 3;
-  filter: var(--blue-drop-shadow);
-  margin-bottom: -75px;
-}
-
-.header-nav {
-  display: flex;
-  align-items: center;
-  max-width: 600px;
-  width: 100%;
-  z-index: 3;
-}
-.header-nav__list {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-.header-nav__item {
-  color: white;
-  font-size: 20px;
-}
-.header-nav__item:hover {
-  color: #ff7a00;
-  transition: 0.2s linear;
-}
-.side-menu {
-  display: none;
-}
 
 ._info-area {
   max-width: 1000px;
