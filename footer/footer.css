@@ -21,6 +21,7 @@
 }
 
 .footer__nav {
+  gap: 5px;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -41,6 +42,8 @@
 .nav-item__link:hover {
   color: #ff7a00cc;
 }
+
+.follow-block__nav-title,
 .nav-item__title {
   font-size: 32px;
   font-weight: 700;
@@ -62,7 +65,8 @@
 
 .contract-block {
   display: flex;
-  align-self: flex-end;
+  align-self: center;
+  margin-top: 40px;
 }
 
 .contract-block__text {
@@ -79,7 +83,8 @@
 .follow-block {
   display: flex;
   flex-direction: column;
-  align-self: flex-end;
+  align-self: center;
+  align-items: center;
 }
 
 .follow-block__img-holder {
@@ -107,6 +112,7 @@
 }
 @media(max-width: 1024px) {
   .footer__nav {
+    gap: 20px;
     flex-direction: column;
     height: fit-content;
   }
@@ -116,9 +122,7 @@
   .footer {
     height: fit-content;
   }
-  .follow-block {
-    align-self: center;
-  }
+  
   .footer__body {
     height: fit-content;
     margin: 20px 0 60px;
@@ -128,8 +132,5 @@
   
   .footer * {
     align-items: center;
-  }
-  .contract-block {
-    align-self: center;
   }
 }
