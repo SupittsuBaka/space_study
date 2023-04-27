@@ -10,7 +10,7 @@
 }
 
 .join-astro {
-  width: calc(100%/3);
+  width: calc(100% / 3);
   aspect-ratio: 518/577;
   animation: 18s linear infinite 0s astro-join;
   filter: drop-shadow(0px 0px 10px black);
@@ -71,6 +71,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 85px;
 }
 .privilege__text {
   color: var(--orange);
@@ -78,6 +79,7 @@
   transform: translate(0px, 120%);
   opacity: 0;
   transition: all 0.8s ease 0s;
+  text-align: center;
 }
 .privilege__text._active {
   transform: translate(0px, 0px);

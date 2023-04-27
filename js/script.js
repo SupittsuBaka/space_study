@@ -67,7 +67,7 @@ window.onload = function () {
     // Parallax при скролле
 
     let thresholdSets = [];
-    for (let i = 0; i <= 1.0; i += 0.005) {
+    for (let i = 0; i <= 1.0; i += 0.001) {
       thresholdSets.push(i);
     }
     const callback = function (entries, observer) {

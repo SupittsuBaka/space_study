@@ -12,9 +12,11 @@
 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 	<link rel="stylesheet" href="./result-section/result.css">
 
-	<link rel="stylesheet" href="./faq-section/faq-block.css">
+	<link rel="stylesheet" href="./faq-section/faq.css">
+	<link rel="stylesheet" href="./feedback-section/feedback.css">
 	<link rel="stylesheet" href="./footer/footer.css">
 	<link rel="stylesheet" href="./css/adaptive.css">
+	<link rel="stylesheet" href="./partners-slider/partners-slider.css">
 	<!-- font -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,22 +41,22 @@
 				</label>
 				<nav class="header-nav">
 					<ul class="header-nav__list">
-						<a href="">
+						<a href="#about-us">
 							<li class="header-nav__item">
 								ПРО НАС
 							</li>
 						</a>
-						<a href="">
+						<a href="#join">
 							<li class="header-nav__item">
 								ПРО IT
 							</li>
 						</a>
-						<a href="">
+						<a href="#courses">
 							<li class="header-nav__item">
 								КУРСИ
 							</li>
 						</a>
-						<a href="">
+						<a href="#contacts">
 							<li class="header-nav__item">
 								КОНТАКТИ
 							</li>
@@ -104,7 +106,7 @@
 
 		<main class="content">
 			<!-- join section -->
-			<section class="content__section join">
+			<section class="content__section join" id="join">
 				<div class="section__body join-body">
 
 					<div class="join__info-area">
@@ -158,7 +160,7 @@
 
 			<!-- way section -->
 			<div class="bg-blue">
-				<section class="content__section way">
+				<section class="content__section way" id="about-us">
 					<div class="section__body way__body">
 						<div class="way-text">
 							<div class="way-header">
@@ -232,9 +234,9 @@
 					</div>
 				</div>
 			</section>
-			<!-- courses section -->
+			<!-- Courses section -->
 			<div class="bg-blue">
-				<section class="courses content__section">
+				<section class="courses content__section" id="courses">
 					<div class="courses__body section__body">
 						<div class="courses__text">
 							<div class="courses__info-area">
@@ -251,7 +253,7 @@
 								<ul class="features__list">
 									<li class="features__item-holder">
 										<div class="features__item">
-											<div class="features__icon-holder">
+											<div class="features__icon-holder ">
 												<img src="./courses-section/img/features/01.png" alt="icon">
 											</div>
 											<p>Допомога з працевлаштуванням</p>
@@ -386,7 +388,7 @@
 			</div>
 
 
-			<!-- result -->
+			<!-- Result -->
 			<section class="content__section result">
 				<div class="section__body result__body">
 					<div class="result-header">
@@ -437,113 +439,132 @@
 				</div>
 			</section>
 
+			<!-- Partners -->
+			<div class="bg-blue">
+				<section class="content__section partners-section">
 
+					<div class="section__body partners-body">
+						<h2 class="partners-header__title">На тебе чекають найкращі роботодавці:</h2>
+						<div class="logos">
+							<div class="logos-slide">
+								<a href="#"><img src="../img/partners-section/ciklum.png" width="100" height="100" /></a>
+								<a href="#"><img src="../img/partners-section/Creatio.png" width="100" height="100" /></a>
+								<a href="#"><img src="../img/partners-section/epam.png" width="100" height="100" /></a>
+								<a href="#"><img src="../img/partners-section/GlobalLogic.png" width="100" height="100" /></a>
+								<a href="#"><img src="../img/partners-section/Luxoft.png" width="100" height="100" /></a>
+								<a href="#"><img src="../img/partners-section/softserve.png" width="100" height="100" /></a>
+								<a href="#"><img src="../img/partners-section/Ubisoft.png" width="80" height="100" /></a>
 
-
-			<!-- FAQ -->
-			<div class="faq-block">
-
-				<div class="accordion">
-					<hr class="hr-line">
-					<div class="accordion__item-wrapper">
-						<div class="accordion__item">
-
-							<!-- faq question -->
-							<h3 class="accordion__item-title">Не маю ніякого досвіду в IT, у вас є програми для новачків?</h3>
-
-							<!-- faq answer -->
-							<div class="accordion__item-content">
-								<p>Так, ми навчаємо з нуля! Тобі не потрібні ніякі технічні навички чи спеціалізована освіта. Все що
-									потрібно — бути впевненим користувачем ПК.
-								</p>
 							</div>
 						</div>
-						<button class="accordion__item-button accordion__item-plus"></button>
+
 					</div>
-					<hr class="hr-line">
-					<div class="accordion__item-wrapper">
-						<div class="accordion__item">
-
-							<!-- faq question -->
-							<h3 class="accordion__item-title">Хто викладає і розробляє програми навчання?</h3>
-
-							<!-- faq answer -->
-
-							<div class="accordion__item-content">
-								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-									industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-									and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
-									leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
-									with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-									publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-							</div>
-						</div>
-						<button class="accordion__item-button accordion__item-plus"></button>
-					</div>
-					<hr class="hr-line">
-
-					<div class="accordion__item-wrapper">
-						<div class="accordion__item">
-
-							<!-- faq question -->
-							<h3 class="accordion__item-title">Скільки людей в групі?</h3>
-
-							<!-- faq answer -->
-							<div class="accordion__item-content">
-								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-									industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-									and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
-									leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
-									with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-									publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-							</div>
-						</div>
-						<button class="accordion__item-button accordion__item-plus"></button>
-					</div>
-					<hr class="hr-line">
-					<div class="accordion__item-wrapper">
-						<div class="accordion__item">
-
-							<!-- faq question -->
-							<h3 class="accordion__item-title">Чи буде сертифікат?</h3>
-
-							<!-- faq answer -->
-							<div class="accordion__item-content">
-								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-									industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-									and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
-									leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
-									with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-									publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-							</div>
-						</div>
-						<button class="accordion__item-button accordion__item-plus"></button>
-					</div>
-					<hr class="hr-line">
-					<div class="accordion__item-wrapper">
-						<div class="accordion__item">
-
-							<!-- faq question -->
-							<h3 class="accordion__item-title">Що, як мені не сподобається?</h3>
-
-							<!-- faq answer -->
-							<div class="accordion__item-content">
-								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-									industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-									and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
-									leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
-									with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-									publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-							</div>
-						</div>
-						<button class="accordion__item-button accordion__item-plus"></button>
-					</div>
-				</div>
+				</section>
 			</div>
+			<!-- FAQ -->
+
+			<section class="content__section faq-section ">
+
+				<div class="section__body faq__body">
+
+					<div class="container">
+						<h2 class="faq-header__title">FAQ</h2>
+						<div class="accordion">
+							<div class="accordion-item">
+								<button id="accordion-button-1" aria-expanded="false">
+									<span class="accordion-title">Не маю ніякого досвіду в IT, у вас є програми для новачків?</span>
+									<span class="icon" aria-hidden="true"></span>
+								</button>
+								<div class="accordion-content">
+									<p>
+										Так, ми навчаємо з нуля! Тобі не потрібні ніякі технічні навички чи спеціалізована освіта. Все що
+										потрібно — бути впевненим користувачем ПК.
+									</p>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<button id="accordion-button-2" aria-expanded="false">
+									<span class="accordion-title">Хто викладає і розробляє програми навчання?</span>
+									<span class="icon" aria-hidden="true"></span>
+								</button>
+								<div class="accordion-content">
+									<p>
+										Всі програми розроблені фахівцями в цих галузях під чітким керівництвом наших академічних
+										керівників. Викладають вчителі, спеціалісти-практики у своїй сфері не нижче рівня Middle Developer
+									</p>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<button id="accordion-button-3" aria-expanded="false">
+									<span class="accordion-title">Скільки людей в групі?</span>
+									<span class="icon" aria-hidden="true"></span>
+								</button>
+								<div class="accordion-content">
+									<p>
+										В середньому 8-15 людей в групі.
+									</p>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<button id="accordion-button-4" aria-expanded="false">
+									<span class="accordion-title">Для якого віку розраховані програми?</span>
+									<span class="icon" aria-hidden="true"></span>
+								</button>
+								<div class="accordion-content">
+									<p>
+										Наші програми навчання розраховані на дорослих 18+. Але якщо ти молодше, і вже готовий пірнати у
+										світ IT, залишай заявку, ми тебе навчимо!
+									</p>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<button id="accordion-button-5" aria-expanded="false">
+									<span class="accordion-title">Чи є домашні завдання?</span>
+									<span class="icon" aria-hidden="true"></span>
+								</button>
+								<div class="accordion-content">
+									<p>
+										Так. Наші програми побудовані за принципом проєктного навчання. Тобто ти зі своєю командою будеш
+										постійно працювати над реальним проєктом!
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</section>
 
 
+
+
+
+
+
+
+
+			<!-- Feedback -->
+			<div class="bg-black">
+				<section class="content__section feedback">
+
+					<div class="section__body feedback__body">
+						<div class="feedback-header">
+							<h2 class="feedback-header__title">Відкрийте для себе всесвіт ІТ-освіти з нашими курсами</h2>
+						</div>
+						<div class="feedback-form">
+							<span class="feedback-form__caption">Дозвольте нам провести вас у подорож галактикою технологій.</span>
+
+							<form class="contact-form" id="contact-form" action="#" method="post">
+								<input class="phone-field" type="tel" id="phone" name="phone" pattern="[0-9]{10}"
+									placeholder="+38 (xxx) xxx xx xx" required>
+								<button class="button" type="submit">Надіслати</button>
+							</form>
+						</div>
+					</div>
+				</section>
+			</div>
 		</main>
-		<footer class="footer">
+		<footer class="footer" id="contacts">
 			<div class="footer-block">
 				<nav class="footer-block__nav">
 					<a href=""><img class="logo-footer" src="../img/footer/image.png"></a>
@@ -610,7 +631,13 @@
 	<script src="js/preventScroll.js"></script>
 	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 	<script src="./courses-section/courses-swiper.js"></script>
-	<script src="./faq-section/faq-block.js"></script>
+	<script src="./faq-section/faq.js"></script>
+	<script src="./feedback-section/feedback.js"></script>
+	<script src="https://unpkg.com/imask"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"
+		integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
+	<script src="./js/smoothScroll.js"></script>
+	<script src="./partners-slider/partners-slider.js"></script>
 </body>
 
 </html>

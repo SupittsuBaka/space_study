@@ -20,17 +20,19 @@
           <h2 class="feedback-header__title">Відкрийте для себе всесвіт ІТ-освіти з нашими курсами</h2>
         </div>
         <div class="feedback-form">
-          <form id="contact-form" action="#" method="post">
-            <div>
-              <label for="phone"></label>
-              <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
-            </div>
-            <button type="submit">Відправити</button>
+          <span class="feedback-form__caption">Дозвольте нам провести вас у подорож галактикою технологій.</span>
+
+          <form class="contact-form" id="contact-form" action="#" method="post">
+            <input class="phone-field" type="tel" id="phone" name="phone" pattern="[0-9]{10}"
+              placeholder="+38 (xxx) xxx xx xx" required>
+            <button class="button" type="submit">Надіслати</button>
           </form>
         </div>
       </div>
     </section>
   </main>
+  <script src="./feedback.js"></script>
+  <script src="https://unpkg.com/imask"></script>
 </body>
 
 </html>
