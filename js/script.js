@@ -4,7 +4,7 @@
 window.onload = function () {
   const parallax = document.querySelector(".parallax");
 
-  if (parallax && window.innerWidth > 1023) {
+  if (parallax) {
     const content = document.querySelector(".parallax__info-area");
     const clouds = document.querySelectorAll(".images-parallax__clouds");
     const mountains = document.querySelectorAll(".images-parallax__mountains");

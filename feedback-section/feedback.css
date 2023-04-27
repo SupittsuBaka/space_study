@@ -76,9 +76,6 @@
   font-size: 18px;
   padding: 0 15px;
 }
-.phone-field {
-  
-}
 
 .form__button-holder {
   display: flex;
@@ -101,11 +98,6 @@
 }
 .contact-form button {
   align-content: center;
-}
-@media (max-width: 768px) {
-  .contact-form {
-    align-items: center;
-  }
 }
 
 @media (max-width: 1023px) {

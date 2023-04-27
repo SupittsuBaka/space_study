@@ -74,13 +74,23 @@
     display: block;
     cursor: pointer;
     float: right;
-    padding: 40px 20px;
+    padding: 29px 18px;
+    margin: 10px;
+    border-radius: 50%;
   }
+  .hamb:hover {
+    background-color: #0000000F;
+  }
+  .hamb:active {
+    background-color: #0000000F;
+  }
+
   .hamb-line {
     background: white;
     display: block;
     height: 2px;
     position: relative;
+    transition: all 0.2s ease-out;
     width: 24px;
   }
   .hamb-line::before,
@@ -105,21 +115,23 @@
     max-height: calc(100dvh - 70px);
     background-color: var(--blue);
   }
-
   .side-menu:checked ~ .hamb .hamb-line {
     background: transparent;
   }
   .side-menu:checked ~ .hamb .hamb-line::before {
     transform: rotate(-45deg);
     top: 0;
+    background-color: var(--orange);
   }
   .side-menu:checked ~ .hamb .hamb-line::after {
     transform: rotate(45deg);
     top: 0;
+    background-color: var(--orange);
   }
   .header-nav__list {
     list-style: none;
     width: fit-content;
+    overflow: hidden;
     max-width: none;
     display: flex;
     flex-direction: column;
