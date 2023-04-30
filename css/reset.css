@@ -61,3 +61,32 @@ body::-webkit-scrollbar-button {
   --blue-drop-shadow: drop-shadow(4px 4px 0px #0034ba);
   --orange: #ff7a00;
 }
+
+.button {
+  font-size: 24px;
+  color: var(--orange);
+  background-color: rgba(255, 226, 200, 1);
+  padding: 10px 30px;
+  transition: all 0.15s;
+  cursor: pointer;
+}
+
+@media (max-width: 1023px) {
+  .button {
+    background-color: var(--orange);
+    color: white;
+    box-shadow: inset 0px 0px 10px #df6c00;
+  }
+}
+
+.button:hover {
+  background-color: var(--orange);
+  color: white;
+  box-shadow: inset 0px 0px 10px #df6c00;
+}
+
+.button:active {
+  background-color: var(--orange);
+  color: white;
+  box-shadow: inset 0px 0px 20px #ac5300;
+}
