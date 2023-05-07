@@ -193,7 +193,7 @@
 @media(max-width:1023px) {
 	.swiper-slide {
 		display: flex;
-		height: auto;
+		height: 100%;
 	}
 	.courses {
 		height: fit-content;
@@ -234,8 +234,8 @@
 		flex-direction: column;
 		justify-content: space-between;
 		width: 90%;
-		min-height: fit-content;
-		height: auto;
+		max-height: 770px;
+		height: 100vh;
 	}
 	.course-slide__header {
 		min-width: 0;
