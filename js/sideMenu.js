@@ -1,11 +1,11 @@
 /*CLOSE SIDE MENU BY CLICK ON ANCHOR*/
 let anchors = document.getElementsByClassName("header-nav__list")[0].children;
-console.log(anchors);
 
 for(let i = 0; i < anchors.length; i++) {
   anchors[i].addEventListener('click', () => {
-    document.body.classList.toggle("prevent-scroll");
-    sideMenu.click();
+    if(window.innerWidth < 1023) {
+      sideMenu.click();
+    }
   })
 }
 
