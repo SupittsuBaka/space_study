@@ -4,6 +4,7 @@ console.log(anchors);
 
 for(let i = 0; i < anchors.length; i++) {
   anchors[i].addEventListener('click', () => {
+    document.body.classList.toggle("prevent-scroll");
     sideMenu.click();
   })
 }

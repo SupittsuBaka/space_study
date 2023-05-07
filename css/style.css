@@ -47,8 +47,7 @@ h3 {
 }
 
 .parallax__title {
-  margin-top: 25px;
-  font-size: 88px;
+  font-size: calc(56px + (28 + 28) * ((100vw - 320px) / 1440));
   transform: translate(0px, 120%);
   color: rgba(255, 255, 255, 0);
   transition: all 0.8s ease 0s;
