@@ -193,7 +193,7 @@ body {
     grid-area: 4 / 1 / 5 / 4;
   }
   .features-section__item {
-    max-height: 100px;
+    max-height: 120px;
     height: 100vh;
   }
 }
